@@ -1,11 +1,16 @@
 package com.example.cloudy.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
 public class LoginRequestDTO {
-    public String identifier;  // email o username
-    public String password;
+
+    @NotBlank(message = "El identificador (email o username) es obligatorio")
+    private String identifier;
+
+    @NotBlank(message = "La contraseña es obligatoria")
+    private String password;
 }

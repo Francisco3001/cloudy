@@ -7,4 +7,5 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class RegisterResponseDTO {
+    private String token;
 }

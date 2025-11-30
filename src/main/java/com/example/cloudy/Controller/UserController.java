@@ -18,9 +18,4 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/prueba")
-    public ResponseEntity<?> prueba(@RequestBody String dto) {
-        //authService.register(dto);
-        return ResponseEntity.status(HttpStatus.ACCEPTED).build();
-    }
 }
