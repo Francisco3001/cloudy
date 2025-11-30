@@ -16,4 +16,11 @@ public class UserCloud {
     private Long cloudId;
     private Long roleId;
     private LocalDateTime createdAt;
+
+    public UserCloud(Long userId, Long cloudId, Long roleId, LocalDateTime createdAt) {
+        this.userId = userId;
+        this.cloudId = cloudId;
+        this.roleId = roleId;
+        this.createdAt = createdAt;
+    }
 }

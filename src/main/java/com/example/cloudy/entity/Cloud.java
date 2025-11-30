@@ -16,4 +16,12 @@ public class Cloud {
     private Long usedBytes;
     private String path;
     private LocalDateTime createdAt;
+
+    public Cloud(String name, Long maxBytes, Long usedBytes, String path, LocalDateTime createdAt) {
+        this.name = name;
+        this.maxBytes = maxBytes;
+        this.usedBytes = usedBytes;
+        this.path = path;
+        this.createdAt = createdAt;
+    }
 }

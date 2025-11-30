@@ -18,4 +18,14 @@ public class File {
     private String path;
     private String hashSha256;
     private LocalDateTime createdAt;
+
+    public File(Long cloudId, Long userId, String name, Long bytes, String path, String hashSha256, LocalDateTime createdAt) {
+        this.cloudId = cloudId;
+        this.userId = userId;
+        this.name = name;
+        this.bytes = bytes;
+        this.path = path;
+        this.hashSha256 = hashSha256;
+        this.createdAt = createdAt;
+    }
 }

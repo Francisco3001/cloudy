@@ -17,4 +17,13 @@ public class Role {
     private Boolean canDelete;
     private Integer maxUploadKb;
     private LocalDateTime createdAt;
+
+    public Role(String name, Boolean canUpload, Boolean canDownload, Boolean canDelete, Integer maxUploadKb, LocalDateTime createdAt) {
+        this.name = name;
+        this.canUpload = canUpload;
+        this.canDownload = canDownload;
+        this.canDelete = canDelete;
+        this.maxUploadKb = maxUploadKb;
+        this.createdAt = createdAt;
+    }
 }
